@@ -1,0 +1,78 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@300&display=swap');
+
+*{
+  margin: 0;
+  padding: 0;
+}
+
+body{
+  font-family: 'Roboto Condensed';
+  height: 100vh;/*Cobre a altura da tela toda*/
+  background: radial-gradient(#3b45ffd8, #000000da);
+  /*Alinhar no centro*/
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.clock{
+  display: flex;
+  align-items: center;
+  justify-content: space-around;/*Da um espaçmanto entre eles*/
+  height: 200px;
+  width: 700px;
+  background: transparent;
+  box-shadow: 0px 8px 10px rgba(0, 0, 0, 0.5);
+}
+
+.clock div{
+  height: 170px;
+  width: 150px;
+  display: flex;
+  flex-direction: column;/*Coloca os elementos um em baixo do outro*/
+  align-items: center;
+  justify-content: center;
+  color: #FFF;
+  background: radial-gradient(#3b45ffd8, #000000da);
+  box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.7);
+  border-radius: 7px;
+  letter-spacing: 3px;
+}
+
+.clock span{
+  font-weight: bold;
+  font-size: 60px;
+}
+
+.clock span.time{
+  font-size: 12px;
+}
+
+.clock div.btn-start{
+  background-color: transparent;
+}
+
+.clock div.btn-start .start, .reset, .pause{
+  background: transparent;
+  box-shadow: 0px 8px 10px rgba(0, 0, 0, 0.5);
+  color: #FFF;
+  border: none;
+  padding: 10px;
+  border-radius: 10px;
+  font-weight: bold;
+}
+
+
+.clock div.btn-start .start:hover{
+  background-color: rgb(0, 255, 0);
+  font-size: 15px;
+}
+
+.clock div.btn-start .reset:hover{
+  background-color: rgb(255, 255, 0);
+  font-size: 15px;
+}
+.clock div.btn-start .pause:hover{
+  background-color: rgb(255, 0, 0);
+  font-size: 15px;
+}
